@@ -2,14 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:food_delivery/layout/home_layout_screen.dart';
 import 'package:food_delivery/modules/otp/otp_screen.dart';
-import 'package:food_delivery/modules/product/product_screen.dart';
 import 'package:food_delivery/shared/components/components.dart';
 import 'package:food_delivery/shared/components/custom_button.dart';
 import 'package:food_delivery/shared/components/custom_text_form_field.dart';
 import 'package:food_delivery/shared/components/custom_text_form_password.dart';
 import 'package:food_delivery/shared/helper/constants.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:country_code_picker/country_code_picker.dart';
+
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -28,9 +27,9 @@ class LoginScreen extends StatelessWidget {
               ),
             ),
             Positioned(
-              bottom: 230,
-              left: 15,
-              right: 15,
+              bottom: 355.h,
+              left: 20.w,
+              right: 20.w,
               child: CustomPhoneTextFormField(
                 hint: ' Your Phone Number',
                 type: TextInputType.phone,
